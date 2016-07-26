@@ -1,0 +1,22 @@
+/**top-nav Start**/
+.nx-widget-top-nav {
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.nx-widget-top-nav .nx-item {
+  text-align: center;
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.nx-widget-top-nav .bar {
+  position: absolute;
+  height: 2px;
+  background: #ccc;
+}
+
+/**top-nav  End**/

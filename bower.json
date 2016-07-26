@@ -1,0 +1,28 @@
+{
+  "name": "angular-top-nav",
+  "description": "AngularJS directive for top nav.",
+  "main": [
+    "dist/css/angular-top-nav.css",
+    "dist/js/angular-top-nav.js"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": ["angular","top-nav","nav",""],
+  "homepage": "https://github.com/afeiship/angular-top-nav",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
