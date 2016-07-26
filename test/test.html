@@ -21,7 +21,7 @@
 
 <nx-top-nav items="vm.items"
   active-index="vm.activeIndex"
-  css-class="my-top-nav"></nx-top-nav>
+  css-class="my-top-nav" item-click="vm.itemClick()"></nx-top-nav>
 
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="../dist/js/angular-top-nav.js"></script>
@@ -29,8 +29,12 @@
   var TestModule = angular.module('TestApp', ['nx.widget'])
     .controller('MainCtrl', function ($scope) {
       var vm = this;
-      vm.activeIndex=0;
-      vm.itemClick=itemClick;
+      vm.activeIndex=2;
+      vm.itemClick=function(inItem) {
+        return function(inItem) {
+          console.log('outer...->',inItem);
+        }
+      };
       vm.items=[
         {
           text:'全部',
@@ -46,11 +50,7 @@
         }
       ];
 
-      function itemClick() {
-        return function(inItem) {
-          console.log(inItem);
-        }
-      }
+
       //You directive demo code goes here!
     });
 </script>

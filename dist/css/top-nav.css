@@ -5,6 +5,7 @@
   height: 40px;
   line-height: 40px;
   border-bottom: 1px solid #eee;
+  color: #666;
   position: relative;
 }
 
@@ -14,10 +15,21 @@
       flex: 1;
 }
 
+.nx-widget-top-nav .nx-item a {
+  display: block;
+  height: 100%;
+}
+
+.nx-widget-top-nav .nx-item[data-active=true],
+.nx-widget-top-nav .nx-item[data-active=true] a {
+  color: #000;
+  font-weight: bold;
+}
+
 .nx-widget-top-nav .bar {
   transition: all 0.3s;
   position: absolute;
-  height: 2px;
+  height: 3px;
   bottom: 0;
   background: #ccc;
 }
