@@ -15,7 +15,7 @@
         '<div class="nx-item" ng-repeat="item in items">'+
         '<a sref="item.action" ng-click="itemClick()(item)">{{item.text}}</a>'+
         '</div>'+
-        '<b class="bar" ng-style="{width:100/items.length+'%',left:100*activeIndex/items.length+'%'}"></b>'+
+        '<b class="bar" ng-style="{width:100/items.length+\'%\',left:100*activeIndex/items.length+\'%\'}"></b>'+
         '</div>'
       };
 
