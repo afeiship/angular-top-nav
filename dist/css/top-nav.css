@@ -5,6 +5,7 @@
   height: 40px;
   line-height: 40px;
   border-bottom: 1px solid #eee;
+  position: relative;
 }
 
 .nx-widget-top-nav .nx-item {
@@ -14,8 +15,10 @@
 }
 
 .nx-widget-top-nav .bar {
+  transition: all 0.3s;
   position: absolute;
   height: 2px;
+  bottom: 0;
   background: #ccc;
 }
 
