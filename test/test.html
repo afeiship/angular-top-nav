@@ -20,33 +20,34 @@
 <body ng-controller="MainCtrl as vm" ng-cloak>
 
 <nx-top-nav items="vm.items"
-  active-index="vm.activeIndex"
-  css-class="my-top-nav" item-click="vm.itemClick()"></nx-top-nav>
+            active-index="vm.activeIndex"
+            css-class="my-top-nav" item-click="vm.itemClick()"></nx-top-nav>
 
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-module-stiffener/dist/angular-module-stiffener.js"></script>
 <script type="text/javascript" src="../dist/js/angular-top-nav.js"></script>
 <script type="text/javascript">
   var TestModule = angular.module('TestApp', ['nx.widget'])
     .controller('MainCtrl', function ($scope) {
       var vm = this;
-      vm.activeIndex=2;
-      vm.itemClick=function(inItem) {
-        return function(inItem) {
-          console.log('outer...->',inItem);
+      vm.activeIndex = 2;
+      vm.itemClick = function (inItem) {
+        return function (inItem) {
+          console.log('outer...->', inItem);
         }
       };
-      vm.items=[
+      vm.items = [
         {
-          text:'全部',
-          action:'all'
+          text: '全部',
+          action: 'all'
         },
         {
-          text:'收入',
-          action:'income'
+          text: '收入',
+          action: 'income'
         },
         {
-          text:'支出',
-          action:'revenue'
+          text: '支出',
+          action: 'revenue'
         }
       ];
 

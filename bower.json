@@ -2,14 +2,19 @@
   "name": "angular-top-nav",
   "description": "AngularJS directive for top nav.",
   "main": [
-    "dist/css/angular-top-nav.css",
+    "dist/css/top-nav.css",
     "dist/js/angular-top-nav.js"
   ],
   "authors": [
     "afei"
   ],
   "license": "MIT",
-  "keywords": ["angular","top-nav","nav",""],
+  "keywords": [
+    "angular",
+    "top-nav",
+    "nav",
+    ""
+  ],
   "homepage": "https://github.com/afeiship/angular-top-nav",
   "moduleType": [
     "amd"
@@ -23,6 +28,7 @@
     "src"
   ],
   "dependencies": {
-    "angular": "^1.5.5"
+    "angular": "^1.5.5",
+    "angular-module-stiffener": "afeiship/angular-module-stiffener"
   }
 }
